@@ -1,10 +1,73 @@
 .main__jobs {
-  .main__jobs__single {
-    text-align: left;
-    background: white;
-    max-width: $max;
-    margin: 1rem auto;
-    border-radius: $radius;
-    box-shadow: 0 3px 6px rgba(44, 44, 44, 0.15);
+  ul {
+    padding: 2rem 1rem;
+    display: block;
+    width: 100%;
+    li {
+      display: block;
+      .main__jobs__single {
+        text-align: left;
+        background: white;
+        max-width: $max;
+        margin: 1rem auto;
+        border-radius: $radius;
+        box-shadow: 0 3px 6px rgba(44, 44, 44, 0.15);
+        header {
+          cursor: pointer;
+          h3 {
+            position: relative;
+            padding: 1rem 3rem;
+            @include md {
+              padding: 2rem 4rem;
+            }
+            &::after,
+            &::before {
+              content: "";
+              position: absolute;
+              top: 1.3rem;
+              width: 0.9rem;
+              height: 0.9rem;
+              @include md {
+                top: 2.3rem;
+              }
+            }
+            &::before {
+              left: 1rem;
+              background: url("../img/job.svg") center / 100% no-repeat;
+              @include md {
+                left: 2rem;
+              }
+            }
+            &::after {
+              right: 1rem;
+              background: url("../img/job-arrow.svg") center / auto 100%
+                no-repeat;
+              transition: 0.4s;
+              @include md {
+                right: 2rem;
+              }
+            }
+            &.main__jobs__single--active {
+              &::after {
+                -webkit-transform: rotateZ(90deg);
+                -ms-transform: rotateZ(90deg);
+                transform: rotateZ(90deg);
+              }
+            }
+          }
+        }
+
+        div {
+          display: none;
+          padding: 0rem 3rem 1rem;
+          @include md {
+            padding: 0rem 4rem 1rem;
+          }
+          h4 {
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
   }
 }

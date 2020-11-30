@@ -1,7 +1,15 @@
 .main__partners {
+  padding: 6rem 0;
+  @include md {
+    padding: 8rem 0;
+  }
   img {
-    margin: 2rem 3em;
+    margin: 1rem 1.5em;
     width: auto;
-    height: 4rem;
+    height: 2.5rem;
+    @include md {
+      margin: 2rem 3em;
+      height: 4rem;
+    }
   }
 }
