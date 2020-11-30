@@ -47,7 +47,7 @@
           @include sm {
             top: auto;
             width: auto;
-            @include translate(-50%);
+            @include translateX(-50%);
           }
         }
         .main__info__schema__lines {

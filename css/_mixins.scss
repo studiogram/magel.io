@@ -15,10 +15,10 @@
   -ms-align-items: $val;
   align-items: $val;
 }
-
-@mixin bg($color) {
-  background: url(../img/footer-top.svg) right top / 20% no-repeat,
-    url(../img/footer-bottom.svg) left bottom / 20% no-repeat, $color;
+@mixin flex-wrap($val) {
+  -webkit-flex-wrap: $val;
+  -ms-flex-wrap: $val;
+  flex-wrap: $val;
 }
 
 @mixin sm {
@@ -39,8 +39,13 @@
   }
 }
 
-@mixin translate($percent) {
+@mixin translateX($percent) {
   -webkit-transform: translateX($percent);
   -ms-transform: translateX($percent);
   transform: translateX($percent);
+}
+@mixin translateY($percent) {
+  -webkit-transform: translateY($percent);
+  -ms-transform: translateY($percent);
+  transform: translateY($percent);
 }

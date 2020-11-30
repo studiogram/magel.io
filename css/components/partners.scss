@@ -3,13 +3,16 @@
   @include md {
     padding: 8rem 0;
   }
-  img {
-    margin: 1rem 1.5em;
-    width: auto;
-    height: 2.5rem;
-    @include md {
-      margin: 2rem 3em;
-      height: 4rem;
+  div {
+    margin-top: 3rem;
+    img {
+      margin: 1rem 1.5em;
+      width: auto;
+      height: 2.5rem;
+      @include md {
+        margin: 2rem 3em;
+        height: 4rem;
+      }
     }
   }
 }
