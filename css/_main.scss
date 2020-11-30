@@ -111,12 +111,21 @@ textarea {
 button {
   background: $orange;
   color: white;
+  font-family: $font-arpona;
+  font-weight: 700;
+  font-size: 1em;
   border: none;
   outline: none;
   border-radius: $radius;
   box-shadow: 0 10px 20px rgba($blue, 0.25);
   padding: 1rem 2rem;
   cursor: pointer;
+  text-shadow: 0 3px 5px darken($orange, 15%);
+  transition: 0.5s;
+  &:hover {
+    background: darken($orange, 5%);
+    box-shadow: 0 0px 30px rgba($blue, 0.25);
+  }
 }
 
 /* Section background */

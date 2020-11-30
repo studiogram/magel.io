@@ -1,3 +1,28 @@
+@-webkit-keyframes animJobs {
+  from {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+  }
+}
+@keyframes animJobs {
+  from {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+  }
+}
+
 .menu {
   font-weight: 700;
   margin-top: 3rem;
@@ -18,13 +43,61 @@
       @include align-items(center);
       @include justify-content(center);
       font-size: 0.7em;
+      margin-top: 1rem;
       @include md {
         font-size: 0.9em;
+        margin-top: 0;
       }
       li {
         padding: 0 0.5rem;
+
         @include md {
           font-size: 0.9em;
+          padding: 0 1rem;
+        }
+        .menu__jobs {
+          &.menu__jobs--active {
+            position: relative;
+            &::before,
+            &::after {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: 105%;
+              display: block;
+              width: 4px;
+              height: 4px;
+              background: $orange;
+              border-radius: 50%;
+            }
+            &::after {
+              opacity: 0.3;
+              -webkit-animation: animJobs 0.5s linear infinite alternate;
+              animation: animJobs 0.5s linear infinite alternate;
+            }
+          }
+        }
+        .menu__login {
+          position: relative;
+          padding-right: 1.2em;
+          &:hover {
+            &::after {
+              -webkit-transform: rotateZ(45deg);
+              -ms-transform: rotateZ(45deg);
+              transform: rotateZ(45deg);
+            }
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            top: calc(50% - 5px);
+            right: 0;
+            display: block;
+            width: 11px;
+            height: 11px;
+            background: url("../img/arrow.svg") center / 100% no-repeat;
+            transition: 0.2s;
+          }
         }
       }
       .menu__linkedin {
