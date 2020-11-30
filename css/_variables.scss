@@ -7,6 +7,25 @@ $lightblue: #f7f8ff;
 $blue: #3446a9;
 $orange: #fd918a;
 
+.color-lightblue {
+  color: $lightblue;
+}
+.color-blue {
+  color: $blue;
+}
+.color-orange {
+  color: $orange;
+}
+.bg-lightblue {
+  background: $lightblue;
+}
+.bg-blue {
+  background: $blue;
+}
+.bg-orange {
+  background: $orange;
+}
+
 /* breakpoints */
 $screen-small: 43rem;
 $screen-medium: 62rem;

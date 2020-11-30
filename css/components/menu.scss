@@ -1,10 +1,13 @@
 .menu {
-  @include flex;
-  @include justify-content(space-between);
-  @include align-items(center);
   font-weight: 700;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  text-align: center;
+  @include md {
+    @include flex;
+    @include justify-content(space-between);
+    @include align-items(center);
+  }
 
   .menu__logo {
     width: 10rem;
@@ -13,8 +16,16 @@
     ul {
       @include flex;
       @include align-items(center);
+      @include justify-content(center);
+      font-size: 0.7em;
+      @include md {
+        font-size: 0.9em;
+      }
       li {
-        padding: 0 1rem;
+        padding: 0 0.5rem;
+        @include md {
+          font-size: 0.9em;
+        }
       }
       .menu__linkedin {
         img {

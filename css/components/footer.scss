@@ -1,18 +1,36 @@
 .footer {
   position: relative;
-  @include bg($blue);
+  background: url(../img/footer-top.svg) right top / 20% no-repeat,
+    url(../img/footer-bottom.svg) left bottom / 30% no-repeat, $blue;
   color: white;
+  overflow: auto;
   .footer__contact {
     overflow: hidden;
-
+    border-radius: $radius;
+    position: relative;
+    background: lighten($blue, 15%);
+    padding: 2rem;
+    margin: 2rem;
+    width: calc(100% - 4rem);
+    @include lg {
+      padding: 4rem;
+      margin: 4rem 4rem 2rem 4rem;
+      width: calc(100% - 8rem);
+    }
     .footer__contact__blurry {
       position: absolute;
-      overflow: hidden;
       width: 100%;
       height: 100%;
-      @include bg(lighten($blue, 15%));
-      filter: blur(20px);
+      background: url(../img/footer-top.svg) right top / 20% no-repeat,
+        url(../img/footer-bottom.svg) left bottom / 30% no-repeat;
       -webkit-filter: blur(20px);
+      filter: blur(20px);
+      top: -2rem;
+      left: -2rem;
+      @include lg {
+        top: -4rem;
+        left: -4rem;
+      }
     }
     div,
     form {
