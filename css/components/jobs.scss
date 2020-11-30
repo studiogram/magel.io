@@ -1,0 +1,10 @@
+.main__jobs {
+  .main__jobs__single {
+    text-align: left;
+    background: white;
+    max-width: $max;
+    margin: 1rem auto;
+    border-radius: $radius;
+    box-shadow: 0 3px 6px rgba(44, 44, 44, 0.15);
+  }
+}

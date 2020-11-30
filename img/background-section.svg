@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1837.802" height="712.19" viewBox="0 0 1837.802 712.19">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.384" cy="0.094" r="0.738" gradientTransform="matrix(1, 0.001, -0.002, 1.645, 0.001, -0.216)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_61" data-name="Rectangle 61" width="1837.802" height="712.19" fill="url(#radial-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Groupe_756" data-name="Groupe 756" transform="translate(0 0)" opacity="0.301">
+    <g id="Groupe_74" data-name="Groupe 74" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <path id="Tracé_350" data-name="Tracé 350" d="M321.222,114.511,0,435.733c152.681,152.681,400.22,152.681,552.9,0l44.778-44.778L874.123,114.511c-152.681-152.681-400.22-152.681-552.9,0" transform="translate(0 0.001)" fill="url(#radial-gradient)"/>
+      <path id="Tracé_351" data-name="Tracé 351" d="M944.642,126.042c-166.665-166.665-436.87-166.665-603.534,0L321.639,145.51,45.21,421.939,321.639,698.383v.014h.014l295.9-295.9,25.324-25.324,44.778,44.764c152.667,152.681,400.22,152.681,552.887,0Z" transform="translate(597.262 13.78)" fill="url(#radial-gradient)"/>
+    </g>
+  </g>
+</svg>

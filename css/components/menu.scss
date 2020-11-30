@@ -1,0 +1,26 @@
+.menu {
+  @include flex;
+  @include justify-content(space-between);
+  @include align-items(center);
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  .menu__logo {
+    width: 10rem;
+  }
+  .menu__list {
+    ul {
+      @include flex;
+      @include align-items(center);
+      li {
+        padding: 0 1rem;
+      }
+      .menu__linkedin {
+        img {
+          width: 1.5rem;
+        }
+      }
+    }
+  }
+}

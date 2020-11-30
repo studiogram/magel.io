@@ -1,0 +1,9 @@
+@import url("https://use.typekit.net/gbb0zwh.css");
+@import "mixins";
+@import "variables";
+@import "main";
+
+/* SCSS partials */
+
+@import "./components/menu", "./components/info", "./components/jobs",
+  "./components/partners", "./components/footer";

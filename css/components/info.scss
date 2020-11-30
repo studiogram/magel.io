@@ -1,0 +1,155 @@
+.main__info {
+  max-width: $max;
+  margin: auto;
+  padding: 0 1rem;
+  h1 {
+    span {
+      color: $orange;
+      background-image: linear-gradient(rgba(0, 0, 0, 0) 60%, white 60%);
+    }
+  }
+  .main__info__schema__parent {
+    max-width: $max-smaller;
+    margin: 0 auto;
+    padding: 5em 2em;
+    .main__info__schema {
+      position: relative;
+      .main__info__schema__plan {
+        position: absolute;
+        width: 36%;
+      }
+      svg,
+      .main__info__schema__lines,
+      figure {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      figure {
+        pointer-events: none;
+        figcaption {
+          pointer-events: none;
+          position: absolute;
+          font-family: $font-adelle;
+          font-weight: 700;
+          font-size: 0.7em;
+          width: 100%;
+          background: white;
+          border-radius: $radius;
+          top: -60px;
+          padding: 1em;
+          white-space: nowrap;
+          opacity: 0;
+          visibility: hidden;
+          @include sm {
+            top: auto;
+            width: auto;
+            @include translate(-50%);
+          }
+        }
+        .main__info__schema__lines {
+          pointer-events: none;
+        }
+        .main__info__schema__plan {
+          pointer-events: auto;
+          cursor: pointer;
+        }
+      }
+      :nth-child(1) {
+        z-index: 30;
+        .main__info__schema__plan {
+          top: -1%;
+          left: 53%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 100%;
+            left: 68%;
+          }
+        }
+      }
+      :nth-child(2) {
+        z-index: 50;
+        .main__info__schema__plan {
+          top: 22.5%;
+          left: 76%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 75%;
+            left: 90%;
+          }
+        }
+      }
+      :nth-child(3) {
+        z-index: 70;
+        .main__info__schema__plan {
+          top: 58%;
+          left: 63.5%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 40%;
+            left: 78%;
+          }
+        }
+      }
+      :nth-child(4) {
+        z-index: 80;
+        .main__info__schema__plan {
+          top: 67%;
+          left: 22%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 34%;
+            left: 38%;
+          }
+        }
+      }
+      :nth-child(5) {
+        z-index: 40;
+        .main__info__schema__plan {
+          top: 37%;
+          left: 0%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 62%;
+            left: 14%;
+          }
+        }
+      }
+      :nth-child(6) {
+        z-index: 20;
+        .main__info__schema__plan {
+          top: 7%;
+          left: 17%;
+        }
+        figcaption {
+          @include sm {
+            bottom: 94%;
+            left: 32%;
+          }
+        }
+      }
+
+      svg {
+        z-index: 0;
+        pointer-events: none;
+        .main__info__schema__outlines {
+          fill: none;
+          stroke: $orange;
+          stroke-width: 2;
+        }
+      }
+      .main__info__schema__center {
+        pointer-events: none;
+        position: relative;
+        z-index: 60;
+      }
+    }
+  }
+}

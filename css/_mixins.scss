@@ -1,0 +1,46 @@
+@mixin flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin justify-content($val) {
+  -webkit-justify-content: $val;
+  -ms-justify-content: $val;
+  justify-content: $val;
+}
+@mixin align-items($val) {
+  -webkit-align-items: $val;
+  -ms-align-items: $val;
+  align-items: $val;
+}
+
+@mixin bg($color) {
+  background: url(../img/footer-top.svg) right top / 20% no-repeat,
+    url(../img/footer-bottom.svg) left bottom / 20% no-repeat, $color;
+}
+
+@mixin sm {
+  @media (min-width: #{$screen-small}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+@mixin translate($percent) {
+  -webkit-transform: translateX($percent);
+  -ms-transform: translateX($percent);
+  transform: translateX($percent);
+}
